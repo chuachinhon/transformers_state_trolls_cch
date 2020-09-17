@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  text-align: center;
+}
+
+div.a {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.b {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body bgcolor="#EE220C">
+
+<img src="/static/bot_banner.png" width="800" height="200" class="center">
+
+	<header>
+		<div class="a">
+		<p style="color:white;font-size:40px; text-align: center;">PREDICTION</p>
+
+	</div>
+	</header>
+
+	<div class="a">
+
+	{% if prediction == 'LABEL_1'%}
+	<p style="color:black; font-size:40px; text-align: center;">Troll Tweet</p>
+	{% elif prediction == 'LABEL_0'%}
+	<p style="color:white; font-size:40px; text-align: center;">Real Tweet</p>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
