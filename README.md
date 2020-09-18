@@ -16,7 +16,7 @@ With the 2020 US election around the corner, the issue of electoral interference
 
 * Notebooks 2.0 - 2.1: Fine tuning distilbert with custom dataset and detailed testing with unseen validation dataset, as well as a fresh dataset with state troll tweets from Iran.
 
-* Notebook 3.0: Create and test optimised logistic regression model against datasets used to assess fine tuned Distilbert model.
+* Notebook 3.0 - 3.1: Create and test optimised logistic regression and XGB models against datasets used to assess fine tuned Distilbert model.
 
 
 ## 3. APP FOLDER
@@ -31,6 +31,8 @@ With the 2020 US election around the corner, the issue of electoral interference
 
 ## 5. PKL FOLDER
 
-* Pickled logistic regression model from notebook3.0 
+* Pickled logistic regression model from notebook3.0
+
+* Pickled XGB model from notebook3.1
 
 ---
